@@ -4,7 +4,7 @@
       Real World Events
     </nuxt-link>
     <nav>
-      <nuxt-link to="/">&nbsp;| List </nuxt-link>
+      <nuxt-link to="/">List</nuxt-link>&nbsp;|
       <nuxt-link to="/create">
         Create
       </nuxt-link>
