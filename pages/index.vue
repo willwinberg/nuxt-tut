@@ -1,21 +1,31 @@
 <template>
   <div>
     <h1>Events</h1>
+    <EventCard
+      v-for="(event, index) in events"
+      :key="index"
+      :event="event"
+      :data-index="index"
+    />
   </div>
 </template>
 <script>
+import EventCard from '@/components/EventCard.vue'
 export default {
-  head() { // this is a property used by vue-meta
+  head() {
     return {
-      title: 'Event Listing - All the events ',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'literally all the events'
-        }
-      ]
+      title: 'Event Listing'
     }
+  },
+  components: {
+    EventCard
+  },
+  asyncData({ $axios }) {
+    return $axios.get('http://localhost:3000/events').then((response) => {
+      return {
+        events: response.data
+      }
+    })
   }
 }
 </script>
