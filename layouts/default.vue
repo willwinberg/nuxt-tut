@@ -10,19 +10,20 @@ export default {
   components: {
     NavBar
   },
-    head() { // this is a property used by vue-meta
-      return {
-        titleTemplate: '%s - All the events ',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'literally all the events'
-          }
-        ]
-      }
+  head() {
+    // this is a property used by vue-meta
+    return {
+      titleTemplate: '%s - All the events ',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'literally all the events'
+        }
+      ]
     }
   }
+}
 </script>
 
 <style>
