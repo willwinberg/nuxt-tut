@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import EventCard from '@/components/EventCard'
+import EventCard from '@/components/EventCard.vue'
 export default {
   head() {
     return {

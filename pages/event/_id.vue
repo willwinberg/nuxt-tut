@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ event.title }}</h2>
+    <h1>{{ event.title }}</h1>
   </div>
 </template>
 <script>
@@ -24,7 +24,7 @@ export default {
         `http://localhost:3000/events/${params.id}`
       )
       return {
-        events: data
+        event: data
       }
     } catch (e) {
       error({

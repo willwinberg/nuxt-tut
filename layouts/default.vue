@@ -7,9 +7,6 @@
 <script>
 import NavBar from '~/components/NavBar.vue'
 export default {
-  components: {
-    NavBar
-  },
   head() {
     // this is a property used by vue-meta
     return {
@@ -22,6 +19,9 @@ export default {
         }
       ]
     }
+  },
+  components: {
+    NavBar
   }
 }
 </script>
