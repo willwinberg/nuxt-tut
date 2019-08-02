@@ -1,6 +1,8 @@
 # nuxt-tut
 
-> My tiptop Nuxt.js project
+> An example of the power of nuxt
+
+Demo: [nuxt-list.herokuapp.com](https://nuxt-list.herokuapp.com/)
 
 ## Build Setup
 
